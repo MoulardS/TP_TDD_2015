@@ -125,5 +125,25 @@ public class TestConvert {
 
 		Assert.assertEquals("quatre-vingt-dix-neuf", Convert.num2text("99"));
 	}
+	@Test
+	public void test_num2text_cent() {
+
+		Assert.assertEquals("cent", Convert.num2text("100"));
+	}
+	@Test
+	public void test_getUnite_trente_trois() {
+		
+		Assert.assertEquals("trois", Convert.getUnite(33));
+	}
+	@Test
+	public void test_getDizaine_trente_trois() {
+		
+		Assert.assertEquals("trente", Convert.getDizaine(33));
+	}
+	@Test
+	public void test_getCentaine_trois_cent_trente_trois() {
+		
+		Assert.assertEquals("trois cent", Convert.getCentaine(333));
+	}
 
 }
