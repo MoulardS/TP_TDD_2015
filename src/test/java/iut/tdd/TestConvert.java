@@ -131,6 +131,11 @@ public class TestConvert {
 		Assert.assertEquals("cent", Convert.num2text("100"));
 	}
 	@Test
+	public void test_num2text_cent_quatre_vingt_quatorze() {
+
+		Assert.assertEquals("cent-quatre-vingt-quatorze", Convert.num2text("194"));
+	}
+	@Test
 	public void test_getUnite_trente_trois() {
 		
 		Assert.assertEquals("trois", Convert.getUnite(33));

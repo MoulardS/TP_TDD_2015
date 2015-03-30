@@ -18,17 +18,11 @@ public class Convert extends HashTrip {
 
 		if ((num < 100)) {
 
-			if ((num > 69) && (num < 80)) {
-				if (num>76) {
-					return "soixante-dix-"+Convert.getUnite(num);
-				}
+			if ((num > 69) && (num < 77)) {
 				return "soixante-"+liste.get(Integer.toString(num-60));
 			}
 			
-			if ((num > 89) && (num < 100)) {
-				if (num>96) {
-					return "quatre-vingt-dix-"+Convert.getUnite(num);
-				}
+			if ((num > 89) && (num < 97)) {
 				return "quatre-vingt-"+liste.get(Integer.toString(num-60));
 			}
 
@@ -36,6 +30,7 @@ public class Convert extends HashTrip {
 		}
 
 		if ((num > 100) && (num < 1000)) {
+			
 			return Convert.getCentaine(num) + Convert.getDizaine(num) + " "
 					+ Convert.getUnite(num);
 		}
@@ -95,6 +90,12 @@ public class Convert extends HashTrip {
 		while (chiffre > 10) {
 			chiffre = chiffre - 10;
 			cpt++;
+		}
+		if (cpt == 7) {
+			return "soixante-dix";
+		}
+		if (cpt == 9) {
+			return "quatre-vingt-dix";
 		}
 		return liste.get("" + cpt * 10);
 	}
