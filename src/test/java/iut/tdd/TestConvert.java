@@ -95,32 +95,32 @@ public class TestConvert {
 
 		Assert.assertEquals("trente-trois", Convert.num2text("33"));
 	}
-	
+	@Test
 	public void test_num2text_quanrante_deux() {
 
 		Assert.assertEquals("quarante-deux", Convert.num2text("42"));
 	}
-	
+	@Test
 	public void test_num2text_soixante_neuf() {
 
 		Assert.assertEquals("soixante-neuf", Convert.num2text("69"));
 	}
-	
+	@Test
 	public void test_num2text_soixante_quatorze() {
 
 		Assert.assertEquals("soixante-quatorze", Convert.num2text("74"));
 	}
-	
+	@Test
 	public void test_num2text_soixante_dix_neuf() {
 
 		Assert.assertEquals("soixante-dix-neuf", Convert.num2text("79"));
 	}
-	
+	@Test
 	public void test_num2text_quatre_vingt_trois() {
 
 		Assert.assertEquals("quatre-vingt-trois", Convert.num2text("83"));
 	}
-	
+	@Test
 	public void test_num2text_quatre_vingt_dix_neuf() {
 
 		Assert.assertEquals("quatre-vingt-dix-neuf", Convert.num2text("99"));

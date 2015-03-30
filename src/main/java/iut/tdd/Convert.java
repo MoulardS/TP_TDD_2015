@@ -44,8 +44,8 @@ public class Convert extends HashTrip {
 
 		if ((num > 69) && (num < 80)) {
 			a = num - 60;
-			if ((a > 16) && (num < 20)) {
-				a = num - 10;
+			if ((a > 16) && (a < 20)) {
+				a = a - 10;
 				return "soixante-dix-" + liste.get(Integer.toString(a));
 			}
 			return "soixante-" + liste.get(Integer.toString(a));
@@ -53,8 +53,8 @@ public class Convert extends HashTrip {
 		
 		if ((num > 80) && (num < 100)) {
 			a = num - 80;
-			if ((a > 16) && (num < 20)) {
-				a = num - 10;
+			if ((a > 16) && (a < 20)) {
+				a = a - 10;
 				return "quatre-vingt-dix-" + liste.get(Integer.toString(a));
 			}
 			return "quatre-vingt-" + liste.get(Integer.toString(a));
