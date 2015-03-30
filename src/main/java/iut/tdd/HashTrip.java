@@ -2,7 +2,7 @@ package iut.tdd;
 
 import java.util.HashMap;
 
-public abstract class HashTrip {
+public abstract class HashTrip /* lol */ {
 	
 	public static HashMap<String, String> liste = new HashMap<String, String>();
 	static {
@@ -24,10 +24,15 @@ public abstract class HashTrip {
 		liste.put("15", "quinze");
 		liste.put("16", "seize");
 		liste.put("20", "vingt");
+		liste.put("21", "vingt-et-un");
 		liste.put("30", "trente");
+		liste.put("31", "trente-et-un");
 		liste.put("40", "quarante");
+		liste.put("41", "quarante-et-un");
 		liste.put("50", "cinquante");
+		liste.put("51", "cinquante-et-un");
 		liste.put("60", "soixante");
+		liste.put("61", "soixante-et-un");
 		liste.put("100", "cent");
 		liste.put("1000", "mille");
 	}
