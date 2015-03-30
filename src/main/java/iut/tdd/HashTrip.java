@@ -33,6 +33,7 @@ public abstract class HashTrip /* lol */ {
 		liste.put("51", "cinquante-et-un");
 		liste.put("60", "soixante");
 		liste.put("61", "soixante-et-un");
+		liste.put("80", "quatre-vingt");
 		liste.put("100", "cent");
 		liste.put("1000", "mille");
 	}
